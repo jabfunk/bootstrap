@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        div {
+            border-style: ridge;
+            border-color: violet;
+            padding: 1px;
+            margin: 1px;
+            background-color: cadetblue;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+        }
+    </style>
+</head>
+<body>
+    <div class="alert alert-primary" role="alert">
+        This is the home page! 
+    </div>
+
+    <div class="container-fluid">
+    <div class="row">
+        <div class="col-sm">
+                <h2>Movies to see tonight</h2>
+                <p>Pick a movie from below - trailers available for viewing</p>            
+                <table class="table table-hover">
+                  <thead>
+                    <tr>
+                      <th>Title</th>
+                      <th>Genre</th>
+                      <th>More Info</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Luck</td>
+                      <td>Kids Comedy/Drama</td>
+                      <td> <a href="https://www.fandango.com/luck-2022-228647/movie-overview"> Fandango</a> </td>
+                    </tr>
+                    <tr>
+                      <td>Amsterdam</td>
+                      <td>Comedy Drama</td>
+                      <td><a href="https://www.fandango.com/amsterdam-2022-228396/movie-overview"> Fandango </a></td>
+                    </tr>
+                    <tr>
+                      <td>Woman King</td>
+                      <td>Action</td>
+                      <td><a href="https://www.fandango.com/the-woman-king-2022-228394/movie-overview"> Fandango </a></td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            
+        </div>
+        
+        <div class="col-sm">
+            <form action="/action_page.php">
+                <div class="form-group">
+                  <label for="email">Movie</label>
+                  <input type="email" class="form-control" id="movie">
+                </div>
+                <div class="form-group">
+                  <label for="time">Time:</label>
+                  <input type="time" class="form-control" id="time">
+                </div>
+                <div class="checkbox">
+                  <label><input type="checkbox"> I vote to see this movie tonight above all others. </label>
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+              </form>
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <a class="navbar-brand" href="https://www.w3schools.com/bootstrap/default.asp"> Date Night Activities</a>
+          </div>
+          <ul class="nav navbar-nav">
+            <li class="active">
+                <a href="index.html"> Movie </a> <br>
+                <a href="page1.html"> Dinner </a> <br>
+
+          </ul>
+        </div>
+      </nav>
+
+
+
+
+
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+
+</body>
+</html>
